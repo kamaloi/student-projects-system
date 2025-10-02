@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تسجيل المشاريع</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>نظام تسجيل المشاريع الطلابية</h1>
+        </header>
+
+        <main>
+            <div class="form-card">
+                <h2>تسجيل مشروع جديد</h2>
+                <div class="input-group">
+                    <label for="student1Name">اسم الطالب الأول:</label>
+                    <input type="text" id="student1Name" placeholder="الإسم الكامل للطالب الأول" required>
+                </div>
+                <div class="input-group">
+                    <label for="student2Name">اسم الطالب الثاني:</label>
+                    <input type="text" id="student2Name" placeholder="الإسم الكامل للطالب الثاني" required>
+                </div>
+                <div class="input-group">
+                    <label for="projectName">اسم المشروع:</label>
+                    <input type="text" id="projectName" placeholder="عنوان المشروع المقترح" required> 
+                </div>
+                
+                <button id="addProjectBtn">إضافة وتسجيل المشروع</button>
+                <p id="message"></p>
+            </div>
+
+            <div class="display-card">
+                <h2>المشاريع المسجلة</h2>
+                <div class="controls">
+                    <button id="viewProjectsBtn">عرض / تحديث القائمة</button>
+                    <input type="text" id="searchInput" placeholder="ابحث بالاسم أو اسم المشروع...">
+                </div>
+                <div id="projectsListContainer">
+                    <p class="placeholder">اضغط على زر "عرض القائمة" لتحميل المشاريع المسجلة.</p>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
